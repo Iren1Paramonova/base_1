@@ -3,18 +3,18 @@
 }
 if (false) {
   console.log("false");
-}
+}*/
 
-const name = "Ira";
-if (name === "Ira") {
-  console.log("Hello ${name}");
+/*const name = "Ira";
+if (name === "Inna") {
+  console.log(`Hello ${name}`);
 } else {
-  console.log("Hello noname");
+  console.log('Hello noname');
 }*/
 
 /*const name = "Ira";
 if ("Ivan" === "Ira") {
-  console.log("Hello ${name}");
+  console.log(`Hello ${name}`);
 } else {
   console.log("Hello noname");
 }*/
@@ -30,8 +30,7 @@ if (name === "Ira") {
 
 /*if (true) {
     if (true) { console.log("true"); }
-    else {
-        console.log("false");
+    else {console.log("false");
     }
 }*/
 
@@ -39,7 +38,7 @@ if (name === "Ira") {
 const result = userName === "Alex" ? "Hello Alex" : "Hello User";
 console.log(result);*/
 
-/*const a = 17;
+const a = 17;
 const b = 50;
 const c = 41;
 if (a > b) {
@@ -48,7 +47,18 @@ if (a > b) {
   console.log(`Big# ${a}`);
 } else if (b > c) {
   console.log(`Самое большое число ${b}`);
-}*/
+}
+
+//не рабочий код
+/*const a = 17;
+const b = 50;
+const c = 41;
+if (a > b > c) {
+  console.log(`Big ${a}`);
+} else if (b > c > a) {
+  console.log(`Big# ${b}`);
+} else {
+  console.log(`Самое большое число ${c}`);*/
 
 /*const userRole = "manadger";
 switch (userRole) {
@@ -124,7 +134,7 @@ for (let i = 0; i <= arr.length; i += 1)
 }
 console.log(result);*/
 
-let n = 0;
+/*let n = 0;
 for (; n <= 8; n++) {
   console.log(n);
-}
+}*/
