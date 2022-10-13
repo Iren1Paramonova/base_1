@@ -38,7 +38,7 @@ if (name === "Ira") {
 const result = userName === "Alex" ? "Hello Alex" : "Hello User";
 console.log(result);*/
 
-const a = 17;
+/*const a = 17;
 const b = 50;
 const c = 41;
 if (a > b) {
@@ -47,7 +47,7 @@ if (a > b) {
   console.log(`Big# ${a}`);
 } else if (b > c) {
   console.log(`Самое большое число ${b}`);
-}
+}*/
 
 //не рабочий код
 /*const a = 17;
@@ -138,3 +138,11 @@ console.log(result);*/
 for (; n <= 8; n++) {
   console.log(n);
 }*/
+
+if (1 || 0) {
+  console.log(`Go ${result}`);
+}
+const a = 0;
+const b = 1;
+let result1 = a || b;
+let result2 = a || false || "GO" || b;
