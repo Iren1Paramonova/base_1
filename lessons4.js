@@ -139,10 +139,10 @@ for (; n <= 8; n++) {
   console.log(n);
 }*/
 
-if (1 || 0) {
+/*if (1 || 0) {
   console.log(`Go ${result}`);
 }
 const a = 0;
 const b = 1;
 let result1 = a || b;
-let result2 = a || false || "GO" || b;
+let result2 = a || false || "GO" || b;*/
