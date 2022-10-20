@@ -13,18 +13,18 @@ sum(3);*/
 
 /*function sum(a, b) {
   return a + b;
-};
+}
 const result = sum(3, 5);
 console.log(result);
 console.log(sum(4, 6));*/
 
-function posityfSum(a, b) {
+/*function posityfSum(a, b) {
   if (a > 0 && b > 0) {
     return a + b;
   }
   return "Erorr";
 }
-console.log(posityfSum(-3, 5));
+console.log(posityfSum(-3, 5));*/
 
 //Локальные переменные
 /*function getName() {
@@ -104,3 +104,9 @@ scr("11111", 7);*/
 };
 console.log(bu("a"));
 console.log(bu("n"));*/
+
+function welcome(userName = "Nigga") {
+  console.log(`You ${userName}`);
+}
+welcome();
+welcome("Ira");
