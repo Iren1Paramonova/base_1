@@ -1,31 +1,30 @@
 /*function showMessage(message) {
   console.log(message);
 }
-console.log("Hi");
-console.log("Hello");*/
+showMessage("Hi");
+showMessage("Hello");
+showMessage("You");*/
 
-/*function sum(a, b) {
+/*function sum(a, b=0) {
   console.log(a + b);
 }
 sum(2, 3);
-sum(3, 5);
-*/
+sum(3);*/
 
 /*function sum(a, b) {
   return a + b;
-}
-sum(2, 3);
+};
 const result = sum(3, 5);
 console.log(result);
 console.log(sum(4, 6));*/
 
-/*function posityfSum(a, b) {
+function posityfSum(a, b) {
   if (a > 0 && b > 0) {
     return a + b;
   }
   return "Erorr";
 }
-console.log(posityfSum(3, 5));*/
+console.log(posityfSum(-3, 5));
 
 //Локальные переменные
 /*function getName() {
@@ -95,7 +94,7 @@ console.log(getName("Alex"));*/
 scr("ghfj", 3);
 scr("11111", 7);*/
 
-let bu = (letter) => {
+/*let bu = (letter) => {
   if (letter === "a" || letter === "i" || letter === "u" || letter === "y") {
     return true;
   }
@@ -104,4 +103,4 @@ let bu = (letter) => {
   }
 };
 console.log(bu("a"));
-console.log(bu("n"));
+console.log(bu("n"));*/

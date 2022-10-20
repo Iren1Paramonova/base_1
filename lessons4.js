@@ -146,3 +146,15 @@ const a = 0;
 const b = 1;
 let result1 = a || b;
 let result2 = a || false || "GO" || b;*/
+
+/*let b = 0;
+for (let a = 1800; a <= 2022; a += 4) {
+  if (a === 1800) {
+    continue;
+  }
+  if (a === 1900) {
+    continue;
+  }
+  b += 1;
+}
+console.log(b);*/
