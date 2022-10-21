@@ -88,7 +88,7 @@ const sayHi = function (name) {
 };
 
 const funcExpression = function (callback) {
-  for (let i = 0; 1 < 100; i += 1) {}
+  for (let i = 0; i < 100000000000; i += 1) {}
   callback("Alex");
 };
 funcExpression(sayHi);
