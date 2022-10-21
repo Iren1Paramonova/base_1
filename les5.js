@@ -13,7 +13,7 @@ sum(3);*/
 
 /*function sum(a, b) {
   return a + b;
-};
+}
 const result = sum(3, 5);
 console.log(result);
 console.log(sum(4, 6));*/
@@ -24,7 +24,7 @@ console.log(sum(4, 6));*/
   }
   return "Erorr";
 }
-console.log(posityfSum(-3, 5));*/
+console.log(posityfSum(-3, 5));
 
 //Локальные переменные
 /*function getName() {
@@ -126,11 +126,3 @@ scr("11111", 7);*/
 };
 console.log(bu("a"));
 console.log(bu("n"));*/
-
-/*let name = "Ira";
-function seyHi(text = "Hi") {
-  name = "Ivan";
-  console.log(`${text} ${name}`);
-}
-seyHi();
-console.log(name);*/
