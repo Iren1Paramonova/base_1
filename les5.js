@@ -18,13 +18,13 @@ const result = sum(3, 5);
 console.log(result);
 console.log(sum(4, 6));*/
 
-function posityfSum(a, b) {
+/*function posityfSum(a, b) {
   if (a > 0 && b > 0) {
     return a + b;
   }
   return "Erorr";
 }
-console.log(posityfSum(-3, 5));
+console.log(posityfSum(-3, 5));*/
 
 //Локальные переменные
 /*function getName() {
@@ -45,6 +45,17 @@ function sayHi(message = "Hello") {
 }
 console.log(sayHi());*/
 
+//Пример НЕ чистой функции
+/*let a = 0;
+function sum(b) {
+  const result = a + b; a+=1
+  console.log(result);
+}
+sum(2);
+sum(2);
+sum(2);
+sum(2); */ //при одном и том же запросе - возвращает разные значения
+
 //Практика
 
 /*function greeting(userName = "Guest") {
@@ -54,10 +65,17 @@ greeting();
 greeting("Ivan");*/
 
 /*function num(a, b = 1) {
-  return a ** b;
+  console.log(a ** b);
 }
-console.log((a = 2));
-console.log((a = 5));*/
+num(2);
+num(5);
+num(7);*/
+
+/*function massiv(a, b, c, d) {
+  return (a + b + c + d) / 4;
+  console.log(massiv);
+}
+console.log(massiv(2, 3, 4, 5));*/
 
 //Синтаксис функций
 /*const sayHi = function (name) {
@@ -65,13 +83,17 @@ console.log((a = 5));*/
 };
 sayHi("Ivan");*/
 
-/*const funcExpression = function (callback) {
-  for (let i = 0; 1 < 1000000000000; i += 1) {}
+const sayHi = function (name) {
+  console.log(`Hello ${name}`);
+};
+
+const funcExpression = function (callback) {
+  for (let i = 0; 1 < 100; i += 1) {}
   callback("Alex");
 };
-console.log("hi");
+funcExpression(sayHi);
 
-multyfly(3, 4);
+/*multyfly(3, 4);
 const multyfly = function (a, b) {
   console.log(a * b);
 };*/
@@ -104,3 +126,11 @@ scr("11111", 7);*/
 };
 console.log(bu("a"));
 console.log(bu("n"));*/
+
+/*let name = "Ira";
+function seyHi(text = "Hi") {
+  name = "Ivan";
+  console.log(`${text} ${name}`);
+}
+seyHi();
+console.log(name);*/
