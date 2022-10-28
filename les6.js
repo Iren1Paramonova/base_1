@@ -43,8 +43,5 @@ console.log(typeof Math.round(num));
 console.log("stringify".slice(0, 5));
  */
 
-let str = function ("Hello WORLD") {if (str[8] === str.toUpperCase(8)) {
-  console.log("true");
-} else {
-  console.log("false");
-};
+let str = "Today is a good day";
+console.log(str.indexOf("good"));
