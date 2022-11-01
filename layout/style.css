@@ -4,10 +4,26 @@ body {
 h1 {
   border: 5px solid rgb(73, 24, 24);
   background: #fff;
+  font-size: 2.5em;
+  color: rgb(212, 60, 33);
+  text-align: center;
+  padding: 50px 200px 50px 20px;
+  margin: 100px 200px;
 }
 img {
   width: 250px;
 }
 div {
-    border: 5px solid grey;
+  border: 5px solid grey;
+}
+p {
+  background: linear-gradient(90deg, #090979, #00d4ff);
+  box-shadow: 2px 2px 10px goldenrod;
+  color: #fff;
+  border-radius: 12px;
+}
+a{
+  padding: 14px 32px;
+  background: #00d4ff;
+  border-radius: 14px;
 }
