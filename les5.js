@@ -83,7 +83,7 @@ console.log(massiv(2, 3, 4, 5));*/
 };
 sayHi("Ivan");*/
 
-const sayHi = function (name) {
+/* const sayHi = function (name) {
   console.log(`Hello ${name}`);
 };
 
@@ -91,7 +91,7 @@ const funcExpression = function (callback) {
   for (let i = 0; i < 100000000000; i += 1) {}
   callback("Alex");
 };
-funcExpression(sayHi);
+funcExpression(sayHi); */
 
 /*multyfly(3, 4);
 const multyfly = function (a, b) {
@@ -126,3 +126,10 @@ scr("11111", 7);*/
 };
 console.log(bu("a"));
 console.log(bu("n"));*/
+
+function showMessage(from, text) {
+  from = "*" + from + "*";
+  console.log(from + text);
+}
+let from = "Ira";
+showMessage(from, "Hi");
