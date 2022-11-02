@@ -45,7 +45,7 @@ console.log(positiveEvenSum([1, 2, -3, -4, 5, 6])); */
 console.log(arr2); */
 
 //вар.2
-function uniqArrItem(itemArray) {
+/* function uniqArrItem(itemArray) {
   const result = [];
   for (let index = 0; index < itemArray.length; index++) {
     if (!result.includes(itemArray[index])) {
@@ -55,4 +55,7 @@ function uniqArrItem(itemArray) {
   return result;
 }
 const uniqResult = uniqArrItem([1, 2, 1, 3, 4, 5, 2, 3]);
-console.log(uniqResult);
+console.log(uniqResult); */
+
+const arr = [1, 2, 1, 3, 4, 5, 2, 3];
+console.log(arr.includes(6, 0));
