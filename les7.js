@@ -57,5 +57,5 @@ console.log(arr2); */
 const uniqResult = uniqArrItem([1, 2, 1, 3, 4, 5, 2, 3]);
 console.log(uniqResult); */
 
-const arr = [1, 2, 1, 3, 4, 5, 2, 3];
-console.log(arr.includes(6, 0));
+/* const arr = [1, 2, 1, 3, 4, 5, 2, 3];
+console.log(arr.includes(6, 0)); */

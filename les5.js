@@ -127,9 +127,9 @@ scr("11111", 7);*/
 console.log(bu("a"));
 console.log(bu("n"));*/
 
-function showMessage(from, text) {
+/* function showMessage(from, text) {
   from = "*" + from + "*";
   console.log(from + text);
 }
 let from = "Ira";
-showMessage(from, "Hi");
+showMessage(from, "Hi")*/
