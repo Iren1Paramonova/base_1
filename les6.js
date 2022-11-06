@@ -45,3 +45,11 @@ console.log("stringify".slice(0, 5));
 
 let str = "Today is a good day";
 console.log(str.indexOf("good"));
+
+function isEmpty(obj) {
+  for (let key in obj) {
+    return "false";
+  }
+  return "true";
+}
+console.log(isEmpty());
