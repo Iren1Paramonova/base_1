@@ -1,0 +1,38 @@
+/* общие стили  */
+body {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+/*стили головы*/
+header {
+  background: #fff;
+}
+/*стили навигации*/
+.main-menu {
+  background: rgb(228, 178, 87);
+}
+.main-menu-list {
+  list-style: none;
+}
+/*стили контента*/
+section {
+  background: rgb(73, 233, 206);
+}
+.section-item {
+  background: rgb(243, 155, 236);
+}
+/*стили сайдбара*/
+.sidebar-right {
+  background: rgb(163, 53, 53);
+}
+/*стили подвала*/
+footer {
+  background: rgb(132, 61, 199);
+}
