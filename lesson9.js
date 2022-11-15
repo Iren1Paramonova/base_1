@@ -1,11 +1,30 @@
 /* console.log(this);
+var TEST = "TEST";
+console.log(this.TEST);
+console.log(window.TEST); */
 
-function test() {
+/* console.log(globalThis); */
+
+function example() {
   console.log(this);
 }
-test();
+const testObject = {
+  testMetod: example,
+};
+testObject.testMetod();
 
-let obj = {
+/* const testObj = {
+  exampleMetod: example,
+  exampleValue: "j@#$"
+};
+exampleObj.exampleMetod(); */
+
+/* function test() {
+  console.log(this);
+}
+test(); */
+
+/*let obj = {
   name: "NN",
   age: 802,
   cize: 1000000,
@@ -22,8 +41,8 @@ console.log();
 }
 example(); */
 
-function example() {
+/* function example() {
   console.log(this);
 }
 const testObject = { testMethod: example };
-testObject.testMethod();
+testObject.testMethod(); */
