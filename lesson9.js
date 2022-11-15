@@ -5,24 +5,29 @@ console.log(window.TEST); */
 
 /* console.log(globalThis); */
 
-function example() {
+/* function example() {
   console.log(this);
 }
+
 const testObject = {
   testMetod: example,
 };
 testObject.testMetod();
 
-/* const testObj = {
+const testObj = {
   exampleMetod: example,
-  exampleValue: "j@#$"
+  exampleValue: "j@#$",
 };
-exampleObj.exampleMetod(); */
+testObj.exampleMetod(); */
 
-/* function test() {
-  console.log(this);
-}
-test(); */
+const persona = {
+  name: "Ira",
+  age: 5,
+  getName: function () {
+    console.log(this);
+  },
+};
+persona.getName();
 
 /*let obj = {
   name: "NN",
