@@ -40,7 +40,7 @@ example(); */
 const testObject = { testMethod: example };
 testObject.testMethod(); */
 
-/* const town = {
+const town = {
   name: "Moscow",
   population: "25 mln",
   getName: function () {
@@ -59,9 +59,9 @@ town.getPopulation();
 town.setAnyValue("name", "London");
 town.setAnyValue("country", "UK");
 town.getName();
-console.log(town); */
+console.log(town);
 
-const user1 = { name: "Vasya", surName: "Ivanov" };
+/* const user1 = { name: "Vasya", surName: "Ivanov" };
 const user2 = { name: "Petya", surName: "Semenov" };
 function greeting(phrase, smile) {
   console.log(`${this.name} ${this.surName} : ${phrase} : ${smile}`);
@@ -75,5 +75,19 @@ greetingUser1();
 const greetingUser2 = greeting.bind(user2);
 greetingUser2("kuku", "(((");
 
-const greetingUser3 = greeting.bind(user2, "kuku");
-greetingUser3("(((");
+const greetingUser3 = greeting.bind(user2, "kuku");*/
+
+const townTwo = {
+  name: "London",
+  population: "5 mln",
+};
+town.getName();
+town.getPopulation();
+town.getName.call(townTwo);
+town.getPopulation.call(townTwo);
+
+const bound = town.setAnyValue.bind(townTwo);
+bound("name", "Paris");
+bound("country", "France");
+
+console.log(townTwo);
