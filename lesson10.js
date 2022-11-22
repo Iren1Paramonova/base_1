@@ -67,15 +67,43 @@ const user = {
 };
 console.log(user); */
 
-function CreateUser(userName, userAge) {
+/* function CreateUser(userName, userAge) {
   this.name = userName;
   this.age = userAge;
   this.sayHi = function () {
     console.log(`Привет, меня зовут ${this.name}`);
   };
 }
+
+CreateUser.prototype.sayAge = function () {
+  console.log(`Мне ${this.age}`);
+};
 const firstUser = new CreateUser("Alex", 28);
 const secondUser = new CreateUser("Tony", 24);
 const thirdUser = new CreateUser("Ivan", 15);
 console.log(firstUser, secondUser, thirdUser);
 secondUser.sayHi();
+secondUser.sayAge();
+thirdUser.sayAge(); */
+
+//практика
+function Otcrytca(from, to) {
+  (this.from = from),
+    (this.to = to),
+    (this.show = function () {
+      console.log(`Эта открытка от ${this.from} для ${this.to}`);
+    });
+}
+Otcrytca.prototype.showFrom = function (from) {
+  this.from = from;
+};
+let firstOtcrytca = new Otcrytca("Octo", "Kate");
+let firstOtcrytca2 = new Otcrytca("Lenon", "Ono");
+let firstOtcrytca3 = new Otcrytca("Jon", "Merelin");
+firstOtcrytca.show();
+firstOtcrytca2.show();
+firstOtcrytca3.show();
+
+firstOtcrytca.showFrom("Lenon");
+firstOtcrytca.show();
+console.log(firstOtcrytca);
