@@ -87,7 +87,7 @@ secondUser.sayAge();
 thirdUser.sayAge(); */
 
 //практика
-function Otcrytca(from, to) {
+/* function Otcrytca(from, to) {
   (this.from = from),
     (this.to = to),
     (this.show = function () {
@@ -106,4 +106,32 @@ firstOtcrytca3.show();
 
 firstOtcrytca.showFrom("Lenon");
 firstOtcrytca.show();
-console.log(firstOtcrytca);
+console.log(firstOtcrytca); */
+
+//class
+class People {
+  constructor(name, surName) {
+    this.name = name;
+    this.surName = surName;
+  }
+  getFullName() {
+    return `${this.name}:${this.surName}`;
+  }
+}
+
+const firstPeople = new People("Alex", "Ivanov");
+console.log(firstPeople.getFullName());
+
+class Worker extends People {
+  constructor(name, surName, rate, day) {
+    super(name, surName);
+    this.day = day;
+    this.rate = rate;
+  }
+  getSallary() {
+    return `${this.getFullName()} получил ${this.rate * this.day}`;
+  }
+}
+const firstWorker = new Worker("Alex", "Petrov", 500, 20);
+console.log(firstWorker.getFullName());
+console.log(firstWorker.getSallary());
