@@ -1,5 +1,11 @@
 /* console.log("script init");
 console.log(window.location); */
+//Практика
+//п1
+const header = document.querySelector(".header");
+header.textContent = "Моя попытка написать страницу на JS";
+
+//кнопка смены темы
 const themeBtn = document.getElementById("theme_button");
 
 const themeToggle = function () {
@@ -16,8 +22,13 @@ const themeToggle = function () {
 
 themeBtn.addEventListener("click", themeToggle);
 
+//п2
+const container = document.querySelector(".container");
+container.textContent = "Список элементов";
+const list = document.querySelector(".list");
+
 //2
-const content = document.querySelector(".content");
+/* const content = document.querySelector(".content");
 
 content.addEventListener("click", (even) =>
   console.log(even.target, even.currentTarget)
@@ -31,4 +42,4 @@ const listItems = document.querySelectorAll(".list_item");
 
 for (let item of listItems) {
   item.addEventListener("click", (even) => even.stopPropagation());
-}
+} */
