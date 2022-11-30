@@ -2,10 +2,10 @@
 console.log(window.location); */
 //Практика
 //п1
-const header = document.querySelector(".header");
-header.textContent = "Моя попытка написать страницу на JS";
+/* const header = document.querySelector(".header");
+header.textContent = "Моя попытка написать страницу на JS"; */
 
-//кнопка смены темы
+/*кнопка смены темы*/
 const themeBtn = document.getElementById("theme_button");
 
 const themeToggle = function () {
@@ -23,13 +23,26 @@ const themeToggle = function () {
 themeBtn.addEventListener("click", themeToggle);
 
 //п2
-const container = document.querySelector(".container");
+/* const container = document.querySelector(".container");
 container.textContent = "Список элементов";
-const list = document.querySelector(".list");
+const list = document.querySelector(".list"); */
 
-
-const listItem=document.querySelector("li + .active");
+const listItem = document.querySelector("li + .active");
 console.log(listItem);
+
+const listItems = document.querySelectorAll(".list_item");
+console.log(listItem, listItems);
+
+const header = document.querySelector("header");
+header.innerHTML = "<h3>NEW TITLE</h3>";
+console.log(header.innerHTML);
+
+const footer = document.querySelector("footer");
+footer.outerHTML = "<div><p>HELLO FOOTER</p></div>";
+console.log(footer.outerHTML);
+
+const addButton = document.getElementById("addButton");
+addButton.textContent = "Создать новый жлемент";
 
 //2
 /* const content = document.querySelector(".content");
