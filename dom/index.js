@@ -27,6 +27,10 @@ const container = document.querySelector(".container");
 container.textContent = "Список элементов";
 const list = document.querySelector(".list");
 
+
+const listItem=document.querySelector("li + .active");
+console.log(listItem);
+
 //2
 /* const content = document.querySelector(".content");
 
