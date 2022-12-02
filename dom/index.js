@@ -23,24 +23,35 @@ const themeToggle = function () {
 themeBtn.addEventListener("click", themeToggle);
 
 //п2
-const container = document.querySelector(".container");
-container.outerHTML =
-  "<div><div><h2>Список элементов</h2><ol><li>Пунктик #1</li><li>Номер 2</li><li>Значение три</li></ol></div></div>";
+const section = document.createElement("section");
+input.className = "container";
 
+
+
+/* const container = document.querySelector(".container");
+container.outerHTML =
+  "<div><div><h2>Список элементов</h2><ol><li>Пунктик #1</li><li>Номер 2</li><li>Значение три</li></ol></div><button>Создать новый элемент</button></div>";
+  */
 /*const listItem = document.querySelector("li + .active");
 const listItems = document.querySelectorAll(".list_item");
 console.log(listItem, listItems);*/
 
 /*const header = document.querySelector("header");
 header.innerHTML = "<h3>NEW TITLE</h3>";
-console.log(header.innerHTML);*/
+console.log(header.innerHTML);
 
-/*const footer = document.querySelector("footer");
+const footer = document.querySelector("footer");
 footer.outerHTML = "<div><p>HELLO FOOTER</p></div>";
 console.log(footer.outerHTML);*/
 
-/*const addButton = document.getElementById("addButton");
-addButton.textContent = "Создать новый жлемент"; */
+/* const addButton = document.getElementById("addButton");
+addButton.textContent = "Создать новый жлемент";  */
+const input = document.createElement("input");
+input.className = "pole";
+/* input.setAttribute('type', 'text');
+input.setAttribute('value', 'default'); */
+/* document.button.append(input); */
+console.log(input);
 
 //2
 /* const content = document.querySelector(".content");
