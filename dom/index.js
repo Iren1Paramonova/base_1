@@ -2,7 +2,7 @@
 console.log(window.location); */
 //Практика
 //п1
-const header = document.querySelector(".header");
+const header = document.querySelector("header");
 header.textContent = "Моя попытка написать страницу на JS";
 
 /*кнопка смены темы*/
@@ -23,15 +23,39 @@ const themeToggle = function () {
 themeBtn.addEventListener("click", themeToggle);
 
 //п2
-const section = document.createElement("section");
-input.className = "container";
+/* const section = document.querySelector(".container");
+section.outerHTML = "<section><h2>Заголовок списка</h2></section>"; */
 
+let section = document.createElement("section");
+section.className = "container";
 
+let div = document.createElement("div");
+div.className = "content";
+section.prepend(div);
 
-/* const container = document.querySelector(".container");
-container.outerHTML =
-  "<div><div><h2>Список элементов</h2><ol><li>Пунктик #1</li><li>Номер 2</li><li>Значение три</li></ol></div><button>Создать новый элемент</button></div>";
-  */
+let div1 = document.createElement("div");
+div.className = "list_title";
+div.prepend(div1);
+
+let listOl = document.createElement("ol");
+listOl.className = "list";
+div1.prepend(listOl);
+
+let li1 = document.createElement("li");
+li1.className = "list_item";
+li1.innerHTML = "Пункт №1";
+listOl.prepend(li1);
+
+let li2 = document.createElement("li");
+li2.className = "list_item";
+li2.innerHTML = "Пункт №2";
+li1.after(li2);
+
+let li3 = document.createElement("li");
+li3.className = "list_item";
+li3.innerHTML = "Пункт №3";
+li2.after(li3);
+
 /*const listItem = document.querySelector("li + .active");
 const listItems = document.querySelectorAll(".list_item");
 console.log(listItem, listItems);*/
