@@ -28,6 +28,7 @@ section.outerHTML = "<section><h2>Заголовок списка</h2></section>
 
 let section = document.createElement("section");
 section.className = "container";
+themeBtn.after(section);
 
 let div = document.createElement("div");
 div.className = "content";
@@ -56,6 +57,24 @@ li3.className = "list_item";
 li3.innerHTML = "Пункт №3";
 li2.after(li3);
 
+const h2 = document.createElement("h2");
+h2.innerHTML = "Заголовок списка";
+listOl.before(h2);
+console.log(h2);
+
+//3
+const buttonElem = document.createElement("button");
+buttonElem.className = "btn";
+buttonElem.innerHTML = "Добавить Элемент";
+div.append(buttonElem);
+
+/* buttonElem.addEventListener(click, ?) */
+
+const input = document.createElement("input");
+input.type = "text";
+input.className = "css-class-name"; // set the CSS class
+buttonElem.appendChild(input);
+
 /*const listItem = document.querySelector("li + .active");
 const listItems = document.querySelectorAll(".list_item");
 console.log(listItem, listItems);*/
@@ -67,15 +86,6 @@ console.log(header.innerHTML);
 const footer = document.querySelector("footer");
 footer.outerHTML = "<div><p>HELLO FOOTER</p></div>";
 console.log(footer.outerHTML);*/
-
-/* const addButton = document.getElementById("addButton");
-addButton.textContent = "Создать новый жлемент";  */
-const input = document.createElement("input");
-input.className = "pole";
-/* input.setAttribute('type', 'text');
-input.setAttribute('value', 'default'); */
-/* document.button.append(input); */
-console.log(input);
 
 //2
 /* const content = document.querySelector(".content");
