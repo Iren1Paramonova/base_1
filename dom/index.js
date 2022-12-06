@@ -30,17 +30,17 @@ let section = document.createElement("section");
 section.className = "container";
 themeBtn.after(section);
 
-let div = document.createElement("div");
-div.className = "content";
-section.prepend(div);
+let blockContent = document.createElement("div");
+blockContent.className = "content";
+section.prepend(blockContent);
 
-let div1 = document.createElement("div");
-div.className = "list_title";
-div.prepend(div1);
+let blockList = document.createElement("div");
+blockList.className = "list_title";
+blockContent.prepend(blockList);
 
 let listOl = document.createElement("ol");
 listOl.className = "list";
-div1.prepend(listOl);
+blockList.prepend(listOl);
 
 let li1 = document.createElement("li");
 li1.className = "list_item";
@@ -66,14 +66,20 @@ console.log(h2);
 const buttonElem = document.createElement("button");
 buttonElem.className = "btn";
 buttonElem.innerHTML = "Добавить Элемент";
-div.append(buttonElem);
-
-/* buttonElem.addEventListener(click, ?) */
+blockContent.append(buttonElem);
 
 const input = document.createElement("input");
 input.type = "text";
 input.className = "css-class-name"; // set the CSS class
 buttonElem.appendChild(input);
+
+buttonElem.addEventListener(click,function(e){
+  let elemInput= document.querySelector("btn");
+  return
+
+})
+/* buttonElem.addEventListener(click, ?) */
+
 
 /*const listItem = document.querySelector("li + .active");
 const listItems = document.querySelectorAll(".list_item");
