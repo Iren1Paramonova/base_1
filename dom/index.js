@@ -60,7 +60,6 @@ li2.after(li3);
 const h2 = document.createElement("h2");
 h2.innerHTML = "Заголовок списка";
 listOl.before(h2);
-console.log(h2);
 
 //3
 const buttonElem = document.createElement("button");
@@ -71,15 +70,15 @@ blockContent.append(buttonElem);
 const input = document.createElement("input");
 input.type = "text";
 input.className = "css-class-name"; // set the CSS class
-buttonElem.appendChild(input);
+buttonElem.append(input);
 
-buttonElem.addEventListener(click,function(e){
-  let elemInput= document.querySelector("btn");
-  return
+document.querySelector("btn").onclick = myClick;
+function myClick() {
+  let a = document.querySelector("css-class-name").value;
 
-})
+  console.log(a);
+}
 /* buttonElem.addEventListener(click, ?) */
-
 
 /*const listItem = document.querySelector("li + .active");
 const listItems = document.querySelectorAll(".list_item");
