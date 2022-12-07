@@ -57,6 +57,11 @@ li3.className = "list_item";
 li3.innerHTML = "Пункт №3";
 li2.after(li3);
 
+let li4 = document.createElement("li");
+li4.className = "lst_it";
+li4.innerHTML = null;
+li3.after(li4);
+
 const h2 = document.createElement("h2");
 h2.innerHTML = "Заголовок списка";
 listOl.before(h2);
@@ -70,12 +75,12 @@ blockContent.append(buttonElem);
 const input = document.createElement("input");
 input.type = "text";
 input.className = "css-class-name"; // set the CSS class
-buttonElem.append(input);
+blockContent.append(input);
 
 let inputClick = document.querySelector(".btn");
 function myClick() {
-  document.querySelector("css-class-name").value;
-  document.querySelector(".list_item").innerHTML += a;
+  let a = document.querySelector(".css-class-name").value;
+  document.querySelector(".lst_it").innerHTML = a;
 }
 buttonElem.addEventListener("click", myClick);
 
