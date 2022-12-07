@@ -1,9 +1,9 @@
 body {
   width: 100vw;
   height: 100vh;
-  --main-bg-color: #6d6d6d;
-  --bg-color: #212121;
-  --text-color: #ffffff;
+  --main-bg-color: black;
+  --bg-color: #89b3cf;
+  --text-color: #ccccccd7;
   background-color: var(--main-bg-color);
   color: var(--text-color);
 }
@@ -17,6 +17,7 @@ body {
   height: 40px;
   padding: 10px;
   cursor: pointer;
+  background-color: #196c81c5;
 }
 
 .light_theme {
@@ -56,8 +57,4 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 500px;
-}
-
-.active{
-  background-color: red;
 }
