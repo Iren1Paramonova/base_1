@@ -72,13 +72,12 @@ input.type = "text";
 input.className = "css-class-name"; // set the CSS class
 buttonElem.append(input);
 
-document.querySelector("btn").onclick = myClick;
+let inputClick = document.querySelector(".btn");
 function myClick() {
-  let a = document.querySelector("css-class-name").value;
-
-  console.log(a);
+  document.querySelector("css-class-name").value;
+  document.querySelector(".list_item").innerHTML += a;
 }
-/* buttonElem.addEventListener(click, ?) */
+buttonElem.addEventListener("click", myClick);
 
 /*const listItem = document.querySelector("li + .active");
 const listItems = document.querySelectorAll(".list_item");
