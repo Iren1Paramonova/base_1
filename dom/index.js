@@ -82,10 +82,7 @@ function newLi() {
   let li = document.createElement("li");
   li.className = "list_item";
   li.innerHTML = document.querySelector(".inp").value;
-  li3.after(li);
-}
-for (let item of newLi) {
-  item.addEventListener("click", (even) => even.stopPropagation());
+  listOl.append(li);
 }
 buttonElem.addEventListener("click", newLi);
 
