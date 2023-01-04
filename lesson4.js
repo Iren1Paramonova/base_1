@@ -60,12 +60,12 @@ if (a > b > c) {
 } else {
   console.log(`Самое большое число ${c}`);*/
 
-/*const userRole = "manadger";
+/*const userRole = "manager";
 switch (userRole) {
   case "admin":
     console.log("Любит манго");
     break;
-  case "manadger":
+  case "manager":
     console.log("Не обнаружен любитель манго");
     break;
 }*/
@@ -83,7 +83,7 @@ if (a < b && b < c) {
   console.log("A big");
 }*/
 
-/*const temp = -10;
+/* const temp = -9;
 if (temp <= -30) {
   console.log("Оставайтесь дома!");
 } else if (temp > -30 && temp <= -10) {
@@ -92,8 +92,7 @@ if (temp <= -30) {
   console.log("Не холодно");
 } else if (temp > 5 && temp <= 15) {
   console.log("Тепло");
-}
-*/
+} */
 
 /*let i = 0;
 while (i < 10) {
@@ -158,3 +157,59 @@ for (let a = 1800; a <= 2022; a += 4) {
   b += 1;
 }
 console.log(b);*/
+
+//2 заход
+/*const a = 20;
+const b = 16;
+const c = 25;
+if (a > b && a > c) {
+  console.log(`Самый длинный отрезок A равный ${a}`);
+} else if (b > c && b > a) {
+  console.log(`Самый длинный отрезок B равный ${b}`);
+} else {
+  console.log(`Самый длинный отрезок C равный ${c}`);
+}*/
+
+/* console.log(null || 0 || "" || undefined);
+console.log("яблоко" && true && null && 1);
+console.log(0 || (true && "false") || null);
+console.log((0 && true) || ("false" && null));
+console.log(!0 && !!1);
+console.log(!(null || (!"апельсин" && true)));*/
+
+/* let temperature = 7;
+if (temperature <= -30) {
+  console.log("Оставайтесь дома!");
+} else if (temperature > -30 && temperature <= -10) {
+  console.log("Сегодня холодно");
+} else if (temperature > -10 && temperature <= +5) {
+  console.log("Не холодно");
+} else {
+  console.log("false");
+}
+
+let value = "gic";
+switch (value) {
+  case "admin":
+    console.log(`${value} любит кактусы`);
+    break;
+  case "manager":
+    console.log(`${value} пишет карандашом`);
+    break;
+  case "user":
+    console.log(`${value} не понимает как тут оказался`);
+    break;
+  default:
+    console.log(`${value} кто ты?`);
+    break;
+} */
+
+/* for (i = 0; i < 4; i++) {
+  if (i === 2) continue;
+  console.log("Ku-ku");
+} */
+
+let n = 100;
+let m = 30;
+let i = n / m + 1;
+console.log(i);
